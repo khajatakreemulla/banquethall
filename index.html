@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A.B Banquet Hall, Attapur, Hyderabad | Weddings, Receptions & Events</title>
+<meta name="description" content="Air-conditioned banquet hall in Attapur, Hyderabad for weddings, receptions, engagements and corporate events. In-house catering, decor, DJ, parking and power backup. Book on WhatsApp or call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand">A.B Banquet Hall</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#faq">FAQ</a>
+    <a href="#location">Location</a>
+    <a href="#book" class="btn btn-gold btn-sm">Book your date</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="hero-place">Attapur, Hyderabad</p>
+      <h1>Your celebration deserves a hall that is ready for it.</h1>
+      <p class="lead">An air-conditioned hall for weddings, receptions and corporate events, with in-house catering, decor, DJ and parking under one roof.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="btn btn-ghost" data-call href="#">Call now</a>
+      </div>
+    </div>
+
+    <div class="checker" id="checker">
+      <h2>Is your date free?</h2>
+      <label for="checkDate">Pick a date</label>
+      <input type="date" id="checkDate">
+      <div class="check-result" id="checkResult" aria-live="polite">Choose a date to see availability.</div>
+      <a class="btn btn-gold btn-block" href="#book" id="checkBook" hidden>Continue to booking</a>
+    </div>
+  </div>
+  <ul class="hero-facts">
+    <li><strong>300</strong> seated guests</li>
+    <li><strong>450</strong> floating capacity</li>
+    <li><strong>₹500</strong> per plate, veg menu from</li>
+    <li><strong>AC</strong> hall with power backup</li>
+  </ul>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+  <div class="wrap">
+    <h2 class="sec-title">Events we host</h2>
+    <p class="sec-sub">Pick an event to start an enquiry with that type already filled in.</p>
+    <div class="events">
+      <button class="event" data-event="Wedding"><span class="ev-name">Weddings</span><span class="ev-text">Mandap, stage and bridal room, with room for family and friends.</span></button>
+      <button class="event" data-event="Reception"><span class="ev-name">Receptions</span><span class="ev-text">Stage lighting, AV and a floor that handles 450 guests.</span></button>
+      <button class="event" data-event="Engagement"><span class="ev-name">Engagements</span><span class="ev-text">A comfortable, mid-size setup for ring ceremonies.</span></button>
+      <button class="event" data-event="Birthday / Anniversary"><span class="ev-name">Birthdays and anniversaries</span><span class="ev-text">DJ, decor and catering handled for you.</span></button>
+      <button class="event" data-event="Corporate event"><span class="ev-name">Corporate events</span><span class="ev-text">Conference facility with projector and sound.</span></button>
+      <button class="event" data-event="Other">Something else<span class="ev-text">Baby showers, Nikah, get-togethers. Tell us what you need.</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-dark" id="gallery">
+  <div class="wrap">
+    <h2 class="sec-title">Photos and videos</h2>
+    <p class="sec-sub">Tap any item to view it full size.</p>
+    <div class="gallery" id="galleryGrid"></div>
+    <a class="btn btn-ghost-light" id="mapsPhotos" target="_blank" rel="noopener" href="#">See all photos on Google Maps</a>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section" id="amenities">
+  <div class="wrap two-col">
+    <div>
+      <h2 class="sec-title">Everything in one place</h2>
+      <p class="sec-sub">Fewer vendors to chase, fewer things to go wrong on the day.</p>
+      <ul class="amen">
+        <li>Air-conditioned hall</li>
+        <li>In-house catering</li>
+        <li>Bridal room</li>
+        <li>Parking space</li>
+        <li>Power backup</li>
+        <li>Professional AV setup</li>
+        <li>DJ and sound</li>
+        <li>In-house or outside decorators</li>
+        <li>Conference facility</li>
+        <li>Flexible alcohol policy</li>
+      </ul>
+    </div>
+    <aside class="estimator" id="estimator">
+      <h3>Food cost estimate</h3>
+      <p class="muted">Starting rate for the in-house vegetarian menu. Final price depends on the menu you choose.</p>
+      <label for="estGuests">Number of guests: <strong id="estGuestsVal">200</strong></label>
+      <input type="range" id="estGuests" min="50" max="450" step="10" value="200">
+      <div class="est-total"><span>About</span><strong id="estTotal">₹1,00,000</strong></div>
+      <p class="muted small">Hall rental is quoted separately. Call or message for current rates and dates.</p>
+      <a class="btn btn-gold btn-block" data-wa-estimate href="#" target="_blank" rel="noopener">Ask for an exact quote</a>
+    </aside>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section section-tint" id="book">
+  <div class="wrap book-wrap">
+    <div class="book-intro">
+      <h2 class="sec-title">Book your date</h2>
+      <p class="sec-sub">Fill this in and send it straight to us on WhatsApp, or call. We confirm availability and share a quote.</p>
+      <div class="contact-card">
+        <a class="contact-row" data-call href="#"><span>Call</span><strong data-phone-text>Add number</strong></a>
+        <a class="contact-row" data-wa href="#" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Chat with us</strong></a>
+        <a class="contact-row" id="mailRow" href="#"><span>Email</span><strong data-email-text>Add email</strong></a>
+      </div>
+      <p class="muted small">Dates are held only after the booking amount is received and confirmed by the hall.</p>
+    </div>
+
+    <form id="bookingForm" novalidate>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <small class="err" data-for="name"></small>
+      </div>
+      <div class="field">
+        <label for="phone">Mobile number</label>
+        <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit number" required>
+        <small class="err" data-for="phone"></small>
+      </div>
+      <div class="field">
+        <label for="eventType">Event type</label>
+        <select id="eventType" name="eventType" required>
+          <option value="">Select an event</option>
+          <option>Wedding</option><option>Reception</option><option>Engagement</option>
+          <option>Birthday / Anniversary</option><option>Corporate event</option><option>Other</option>
+        </select>
+        <small class="err" data-for="eventType"></small>
+      </div>
+      <div class="field">
+        <label for="date">Event date</label>
+        <input id="date" name="date" type="date" required>
+        <small class="err" data-for="date"></small>
+      </div>
+      <div class="field">
+        <label for="slot">Time slot</label>
+        <select id="slot" name="slot" required>
+          <option value="">Select a slot</option>
+          <option>Morning (6 AM to 12 PM)</option>
+          <option>Afternoon (12 PM to 5 PM)</option>
+          <option>Evening (5 PM to 11 PM)</option>
+          <option>Full day</option>
+        </select>
+        <small class="err" data-for="slot"></small>
+      </div>
+      <div class="field">
+        <label for="guests">Expected guests</label>
+        <input id="guests" name="guests" type="number" min="10" max="450" placeholder="Up to 450" required>
+        <small class="err" data-for="guests"></small>
+      </div>
+      <div class="field">
+        <label for="catering">Catering</label>
+        <select id="catering" name="catering">
+          <option>In-house catering</option>
+          <option>Outside caterer</option>
+          <option>Not decided yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="decor">Decoration</label>
+        <select id="decor" name="decor">
+          <option>In-house decor</option>
+          <option>My own decorator</option>
+          <option>Not decided yet</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="notes">Anything else we should know</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="DJ, stage theme, parking for how many cars, site visit time..."></textarea>
+      </div>
+      <div class="field full actions">
+        <button type="submit" class="btn btn-wa" data-send="wa">Send on WhatsApp</button>
+        <button type="submit" class="btn btn-ghost-dark" data-send="call">Call to book</button>
+        <button type="submit" class="btn btn-ghost-dark" data-send="mail">Send by email</button>
+      </div>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap narrow">
+    <h2 class="sec-title">Questions people ask</h2>
+    <details><summary>How many guests can the hall hold?</summary><p>Seated capacity is about 300 guests. Floating capacity (standing receptions) is about 450.</p></details>
+    <details><summary>Is catering included?</summary><p>In-house catering is available, with vegetarian menus starting around ₹500 per plate. Ask about non-veg options and outside caterers when you enquire.</p></details>
+    <details><summary>Can I bring my own decorator?</summary><p>Yes. Both in-house and outside decorators are allowed.</p></details>
+    <details><summary>Is there parking?</summary><p>Yes, the hall has parking space. Tell us how many vehicles you expect so we can plan for it.</p></details>
+    <details><summary>Is there a room for the bride?</summary><p>Yes, there is a dedicated bridal room.</p></details>
+    <details><summary>What if the power goes out?</summary><p>The hall has power backup, so lights, sound and AC keep running.</p></details>
+    <details><summary>How do I confirm a booking?</summary><p>Send your enquiry here or call. We check the date, share a quote, and the date is held once the booking amount is paid.</p></details>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section section-tint" id="location">
+  <div class="wrap two-col">
+    <div>
+      <h2 class="sec-title">Find us</h2>
+      <address>Pillar No. 177, Chintalmet Rd,<br>Royal Colony, Rambagh Colony,<br>Attapur, Hyderabad, Telangana 500048</address>
+      <div class="loc-actions">
+        <a class="btn btn-gold" id="dirBtn" target="_blank" rel="noopener" href="#">Get directions</a>
+        <a class="btn btn-ghost-dark" id="reviewBtn" target="_blank" rel="noopener" href="#">Read Google reviews</a>
+      </div>
+      <p class="muted small">Planning a site visit? Message us a time and we will be there to show you around.</p>
+    </div>
+    <div class="map"><iframe title="A.B Banquet Hall on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=17.3529244,78.4218211&z=17&output=embed"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div><strong>A.B Banquet Hall</strong><p>Attapur, Hyderabad</p></div>
+    <div><a data-call href="#"><span data-phone-text>Call us</span></a><br><a data-wa href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div><small>&copy; <span id="yr"></span> A.B Banquet Hall. All rights reserved.</small></div>
+  </div>
+</footer>
+
+<!-- Floating buttons (desktop) and sticky bar (mobile) -->
+<div class="fab">
+  <a class="fab-btn fab-wa" data-wa href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <a class="fab-btn fab-call" data-call href="#" aria-label="Call now">Call</a>
+</div>
+<div class="mobile-bar">
+  <a data-call href="#">Call</a>
+  <a href="#book" class="mb-book">Book</a>
+  <a data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Media viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
